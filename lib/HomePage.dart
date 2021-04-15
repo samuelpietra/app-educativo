@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'LetterA.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -20,10 +21,12 @@ class _HomePageState extends State<HomePage> {
               color: Colors.green, borderRadius: BorderRadius.circular(10)),
           child: FlatButton(
             onPressed: () {
-              Navigator.pop(context);
+              Navigator.push(
+                context, MaterialPageRoute(builder: (_) => LetterA())
+              );
             },
             child: Text(
-              'Iniciar jogo',
+              'Vamos aprender!',
               textAlign: TextAlign.center,
               style: TextStyle(color: Colors.white, fontSize: 25),
             ),
